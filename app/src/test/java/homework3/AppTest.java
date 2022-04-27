@@ -5,7 +5,7 @@ package homework3;
 
 import org.junit.jupiter.api.Test;
 
-import homework.App;
+import homework3.App;
 
 import static org.junit.jupiter.api.Assertions.*;
 
