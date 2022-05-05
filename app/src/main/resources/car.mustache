@@ -9,14 +9,15 @@
 
 <div class="container mt-xl-5">
 
+
     <label style="font-size: 40px;color: purple">Car Insert</label>
     <form action="car-add" method="post" id="form1">
         <div class="card">
             <div class="card-body">
                 <div class="form-group">
-                    <label style="color: darkblue">Enter the product name to be added</label>
+                    <label style="color: darkblue">Enter the car brand to be added</label>
                     <input type="text" name="carNameList" class="form-control" id="carName"
-                           placeholder="Example: computer" required>
+                           placeholder="Example: toyota" required>
                 </div>
                 <div class="form-group mt-xl-5">
                     <label style="color: darkblue">Enter the car count to be added</label>
@@ -25,17 +26,17 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-info mt-xl-2">Car Add</button>
+        <button type="submit" class="btn btn-warning btn-lg btn-block">Car Add</button>
     </form>
 
 <div class="mt-xl-5">
-    <label style="font-size: 40px;color: red">Car Order List</label>
+    <label style="font-size: 40px;color: purple">Car  List</label>
     <div class="card">
         <div class="card-body">
             <table class="table table-hover">
                 <thead>
                 <tr>
-                    <th scope="col">Car Name</th>
+                    <th scope="col">Car Brand</th>
                     <th scope="col">Car Count</th>
                 </tr>
                 </thead>
@@ -51,12 +52,12 @@
     </div>
 </div>
 
-    <label style="font-size: 40px; color: red;" class="mt-xl-5">Car Cancel Card </label>
+    <label style="font-size: 40px; color: purple;" class="mt-xl-5">Car Cancel  </label>
     <form method="post" id="form2">
         <div class="card">
             <div class="card-body">
                 <div class="form-group">
-                    <label style="color: darkblue">Enter the product name to be deleted.</label>
+                    <label style="color: darkblue">Enter the car brand to be deleted.</label>
                     <input type="text" name="carName" class="form-control" id="carName"
                            placeholder="Example: toyota" required>
                 </div>
@@ -82,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <button type="submit" id="cancelBtn" class="btn btn-info mt-xl-2" onclick="reloadP();">Car Cancel</button>
+        <button type="submit" id="cancelBtn" class="btn btn-warning btn-lg btn-block" onclick="reloadP();">Car Cancel</button>
         <label id="carCancel" style="display: none">{{result}}</label>
     </form>
 </div>
