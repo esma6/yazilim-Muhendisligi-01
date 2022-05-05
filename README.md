@@ -1,2 +1,1 @@
-This is my first gradle project with CI/CD deployed on heroku
-XXX CHANGE TEST XXX
+This is my first gradle project with CI/CD deployed on heroku.
